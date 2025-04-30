@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+}
+
+body,html {
+    background-color: rgb(211, 235, 211);
+}
+.grid {
+    /* display: inline; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 400px;
+    column-gap: -30px;
+    row-gap: 100px
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 210, 215);
+}
+    
+
+.flip-card2{
+    background-color: transparent;
+    width: 680px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: span 2;
+    background-color: rgb(243, 217, 221);
+}
+
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card2:hover .inner {
+    transform: rotateY(180deg)
+}
+
+
+.flip-card:hover .inner {
+    transform: rotateY(180deg)
+}
+
+
+
+.front {
+    background-color: black;
+    color: white;
+}
+
+
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.img-food {
+    width: 400px;
+    height: 290px;
+}
+
+.img-place{
+    width: 790px;
+    height: 290px;
+    
+}
+
+.img-fun{
+    width: 400px;
+    height: 290px;
+}
+.back{
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}

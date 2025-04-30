@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url("Vietnamese.png");
+    background-size:cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 95%;
+    height: 400px;
+    gap: 30px 50px;
+    margin: auto;
+}
+
+.box {
+    border-radius: 25px;
+    border: 1px solid grey;
+    height: 60%;
+    width: auto;
+    text-align: center;
+    padding: 50px 52px 52px 52px;
+    color: white;
+    font-size: 30px;
+    margin-top: 60px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.img {
+    max-width: 90%;
+}
+
+.back {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+}

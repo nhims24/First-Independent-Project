@@ -1,0 +1,87 @@
+/*Put these styles that affect the whole page at the top */
+body,html {
+    height: 100%;
+    /*Make sure these are set to 100% when you want to use
+    percentages to affect the size of elements inside the body */
+    width: 100%;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(196, 164, 132);
+    /* Don't load images when you don't have to - they slow your site down -
+    background-image: url("light-brown-color-solid-background-1920x1080.png");*/
+
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* ^The line above makes your grid columns responsive - as the size of your
+        window shrinks, your columns will rearrange. Play with the 250px size
+        to see how that changes when the columns rearrange -*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 95%;
+    /* The max-width keeps the grid from growing bigger
+    than the page size, use percents over fixed numbers -
+    max-width: 1000;*/
+    height: 400px;
+    gap: 30px 40px;
+    margin: auto;
+
+}
+
+.image {
+    width: 100%;
+    align-items: center;
+}
+
+img {
+    height: auto;
+    width: 100%;   
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    background-color: rgb(13, 80, 33);
+    text-align: center;
+    color: white;
+    /*padding: 16px 16px 16px 16px;*/
+    
+
+}
+
+p {
+    margin: 16px;
+    font-size: 20px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* I think most of the custom styles that you had written below
+are actually not necessary at all. You decide and add back what you need. */
+
+/*Not good to attach a very specific style to a whole element 
+I'm changing this h4 style to a class: */
+.back {
+   position: fixed;
+   bottom: 0;
+   right: 10px;
+   /* ^ Giving it just a bit of space from the edge. 
+   It might also actually be better to move this to the top 
+   so it's more visible. 
+   right: 0; */
+}
+
+.text {
+    border: 1px solid black;
+    height: 100%;
+    width: auto;
+    
+}

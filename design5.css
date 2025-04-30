@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+  }
+  
+  body,
+  html {
+    background-image: url("pastel-color-sky-watercolor-background_105555-312.jpg");
+    background-size: cover;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 95%;
+    height: 400px;
+    gap: 30px 50px;
+    margin: auto;
+  }
+  
+  .box {
+    border-radius: 25px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    height: 60%;
+    width: auto;
+    padding: 20px 25px 25px 25px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .text {
+    border-radius: 25px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    height: 60%;
+    width: auto;
+    padding: 20px 25px 25px 25px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .text2 {
+    border-radius: 25px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    height: 60%;
+    width: 600px;
+    padding: 20px 25px 25px 25px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+    grid-column-start: span 2;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .back {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+  }
